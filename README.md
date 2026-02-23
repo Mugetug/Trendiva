@@ -41,7 +41,7 @@ TRENDIVA projesi, temel e-ticaret işlevlerini içeren, kullanıcı dostu ve gü
 
 Proje dokümantasyonuna aşağıdaki linklerden erişebilirsiniz:
 
-1. [Müge Tuğ Gereksinimler](Muge-Tug-Gereksinimler.md)
+1. [Müge Tuğ Gereksinimler](Muge-Tug/Muge-Tug-Gereksinimler.md)
 2. [REST API Tasarımı](API-Tasarimi.md)
 3. [REST API](Rest-API.md)
 4. [Web Front-End](WebFrontEnd.md)
