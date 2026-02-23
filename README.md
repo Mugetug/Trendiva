@@ -22,8 +22,8 @@ TRENDIVA projesi, temel e-ticaret işlevlerini içeren, kullanıcı dostu ve gü
 
 ## Proje Linkleri
 
-- **REST API Adresi:** > Henüz yayınlanmadı.
-- **Web Frontend Adresi:** > Henüz yayınlanmadı.
+- **REST API Adresi:** Henüz yayınlanmadı.
+- **Web Frontend Adresi:** Henüz yayınlanmadı.
 
 ---
 
