@@ -1,0 +1,193 @@
+openapi: 3.0.0
+info:
+  title: Trendiva E-Commerce API
+  description: Trendyol benzeri e-ticaret sitesi için REST API tasarımı
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:3000/api
+  paths:
+
+  /users/register:
+    post:
+      summary: Kullanıcı kayıt oluşturma
+      description: Kullanıcı adı, soyadı, email ve şifre ile sisteme kayıt olur.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                firstName:
+                  type: string
+                lastName:
+                  type: string
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '201':
+          description: Kullanıcı başarıyla oluşturuldu
+
+  /users/login:
+    post:
+      summary: Kullanıcı giriş yapma
+      description: Kullanıcı email ve şifre ile giriş yapar.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '200':
+          description: Giriş başarılı
+
+  /products:
+    get:
+      summary: Ürünleri listeleme
+      description: Sistemdeki tüm ürünleri listeler.
+      responses:
+        '200':
+          description: Ürün listesi döndürülür
+
+    post:
+      summary: Ürün ekleme
+      description: Yeni bir ürün sisteme eklenir.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                price:
+                  type: number
+                description:
+                  type: string
+                stock:
+                  type: integer
+      responses:
+        '201':
+          description: Ürün başarıyla eklendi
+
+  /products/{id}:
+    get:
+      summary: Ürün detayını görüntüleme
+      description: Seçilen ürünün tüm bilgileri gösterilir.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Ürün bilgisi döndürülür
+
+    put:
+      summary: Ürün güncelleme
+      description: Mevcut ürün bilgilerini günceller.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                price:
+                  type: number
+                description:
+                  type: string
+                stock:
+                  type: integer
+      responses:
+        '200':
+          description: Ürün başarıyla güncellendi
+
+    delete:
+      summary: Ürün silme
+      description: Seçilen ürün sistemden silinir.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Ürün silindi
+
+  /cart:
+    post:
+      summary: Sepete ürün ekleme
+      description: Kullanıcı bir ürünü sepetine ekler.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                productId:
+                  type: string
+                quantity:
+                  type: integer
+      responses:
+        '201':
+          description: Ürün sepete eklendi
+
+  /cart/{userId}:
+    get:
+      summary: Sepeti görüntüleme
+      description: Kullanıcının sepetindeki ürünleri listeler.
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Sepet bilgileri döndürülür
+
+  /orders:
+    post:
+      summary: Sipariş oluşturma
+      description: Kullanıcı sepetindeki ürünleri satın alarak sipariş oluşturur.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                cartId:
+                  type: string
+                paymentMethod:
+                  type: string
+      responses:
+        '201':
+          description: Sipariş başarıyla oluşturuldu
+          
