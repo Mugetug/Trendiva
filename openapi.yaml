@@ -6,8 +6,8 @@ info:
 
 servers:
   - url: http://localhost:3000/api
-  paths:
 
+paths:
   /users/register:
     post:
       summary: Kullanıcı kayıt oluşturma
@@ -28,7 +28,7 @@ servers:
                 password:
                   type: string
       responses:
-        '201':
+        "201":
           description: Kullanıcı başarıyla oluşturuldu
 
   /users/login:
@@ -47,7 +47,7 @@ servers:
                 password:
                   type: string
       responses:
-        '200':
+        "200":
           description: Giriş başarılı
 
   /products:
@@ -55,7 +55,7 @@ servers:
       summary: Ürünleri listeleme
       description: Sistemdeki tüm ürünleri listeler.
       responses:
-        '200':
+        "200":
           description: Ürün listesi döndürülür
 
     post:
@@ -77,7 +77,7 @@ servers:
                 stock:
                   type: integer
       responses:
-        '201':
+        "201":
           description: Ürün başarıyla eklendi
 
   /products/{id}:
@@ -91,7 +91,7 @@ servers:
           schema:
             type: string
       responses:
-        '200':
+        "200":
           description: Ürün bilgisi döndürülür
 
     put:
@@ -119,7 +119,7 @@ servers:
                 stock:
                   type: integer
       responses:
-        '200':
+        "200":
           description: Ürün başarıyla güncellendi
 
     delete:
@@ -132,7 +132,7 @@ servers:
           schema:
             type: string
       responses:
-        '200':
+        "200":
           description: Ürün silindi
 
   /cart:
@@ -153,7 +153,7 @@ servers:
                 quantity:
                   type: integer
       responses:
-        '201':
+        "201":
           description: Ürün sepete eklendi
 
   /cart/{userId}:
@@ -167,7 +167,7 @@ servers:
           schema:
             type: string
       responses:
-        '200':
+        "200":
           description: Sepet bilgileri döndürülür
 
   /orders:
@@ -188,6 +188,5 @@ servers:
                 paymentMethod:
                   type: string
       responses:
-        '201':
+        "201":
           description: Sipariş başarıyla oluşturuldu
-          
