@@ -11,12 +11,14 @@
 
 Request Body:
 
+```json
 {
 "firstName": "Muge",
 "lastName": "Tug",
 "email": "muge@example.com",
 "password": "123456"
 }
+```
 
 Response: 201 Created - Kullanıcı başarıyla oluşturuldu
 
@@ -29,10 +31,12 @@ Response: 201 Created - Kullanıcı başarıyla oluşturuldu
 
 Request Body:
 
+```json
 {
 "email": "muge@example.com",
 "password": "123456"
 }
+```
 
 Response: 200 OK - Giriş başarılı
 
@@ -45,13 +49,14 @@ Response: 200 OK - Giriş başarılı
 
 Request Body:
 
+```json
 {
 "name": "Beyaz Gömlek",
 "price": 499.99,
 "description": "Şık beyaz gömlek",
 "stock": 15
 }
-
+```
 Response: 201 Created - Ürün başarıyla eklendi
 
 ---
@@ -81,13 +86,14 @@ Response: 200 OK - Ürün bilgisi başarıyla getirildi
 
 Request Body:
 
+```json
 {
 "name": "Siyah Abiye Elbise",
 "price": 999.99,
 "description": "Güncellenmiş ürün açıklaması",
 "stock": 8
 }
-
+```
 Response: 200 OK - Ürün başarıyla güncellendi
 
 ---
@@ -108,12 +114,13 @@ Response: 200 OK - Ürün başarıyla silindi
 
 Request Body:
 
+```json
 {
 "userId": "69b2042dff204a5f4627ab2f",
 "productId": "69b3fbe67c4f8bb96b54d9d7",
 "quantity": 2
 }
-
+```
 Response: 201 Created - Ürün sepete eklendi
 
 ---
@@ -134,10 +141,11 @@ Response: 200 OK - Sepet başarıyla getirildi
 
 Request Body:
 
+```json
 {
 "userId": "69b2042dff204a5f4627ab2f",
 "cartId": "69b3fc567c4f8bb96b54d9d9",
 "paymentMethod": "Kredi Kartı"
 }
-
+```
 Response: 201 Created - Sipariş başarıyla oluşturuldu
