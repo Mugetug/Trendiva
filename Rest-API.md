@@ -1,6 +1,7 @@
 # REST API Görev Dağılımı
 
-**REST API Adresi:** Yayınlandıktan sonra eklenecek
+**REST API Adresi:** [https://trendiva-api.onrender.com](https://trendiva-api.onrender.com)
+
 
 Bu dokümanda, proje kapsamında geliştirilen REST API metotları listelenmektedir.
 
