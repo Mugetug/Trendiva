@@ -30,3 +30,20 @@ exports.getCartByUserId = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
+// Sepetten ürün silme
+exports.removeFromCart = async (req, res) => {
+  try {
+    const { cartItemId } = req.params;
+
+    const deletedItem = await Cart.findByIdAndDelete(cartItemId);
+
+    if (!deletedItem) {
+      return res.status(404).json({ message: "Sepet ürünü bulunamadı" });
+    }
+
+    res.json({ message: "Ürün sepetten kaldırıldı" });
+  } catch (error) {
+    res.status(500).json({ message: "Silme işlemi başarısız", error: error.message });
+  }
+};

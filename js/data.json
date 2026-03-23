@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "name": "Blazer Ceket",
+        "price": {
+            "oldPrice": 1650.00,
+            "newPrice": 799.00
+        },
+        "discount": 52,
+        "img": {
+            "singleImage": "img/products/product1/1.png",
+            "thumbs": [
+                "img/products/product1/1.png",
+                "img/products/product1/2.png",
+                "img/products/product1/3.png"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "name": "Kırmızı Kareli Gömlek",
+        "price": {
+            "oldPrice": 690.00,
+            "newPrice": 570.00
+        },
+        "discount": 17,
+        "img": {
+            "singleImage": "img/products/product2/1.png",
+            "thumbs": [
+                "img/products/product2/1.png",
+                "img/products/product2/2.png",
+                "img/products/product2/3.png"
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "name": "Çizgili Elbise",
+        "price": {
+            "oldPrice": 690.00,
+            "newPrice": 570.00
+        },
+        "discount": 17,
+        "img": {
+            "singleImage": "img/products/product3/1.png",
+            "thumbs": [
+                "img/products/product3/1.png",
+                "img/products/product3/2.png",
+                "img/products/product3/3.png"
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "name": "Dantel Detaylı Sabahlık",
+        "price": {
+            "oldPrice": 699.00,
+            "newPrice": 599.00
+        },
+        "discount": 14,
+        "img": {
+            "singleImage": "img/products/product4/1.png",
+            "thumbs": [
+                "img/products/product4/1.png",
+                "img/products/product4/2.png",
+                "img/products/product4/3.png"
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "name": "Mavi Kareli Gömlek",
+        "price": {
+            "oldPrice": 690.00,
+            "newPrice": 570.00
+        },
+        "discount": 17,
+        "img": {
+            "singleImage": "img/products/product5/1.png",
+            "thumbs": [
+                "img/products/product5/1.png",
+                "img/products/product5/2.png",
+                "img/products/product5/3.png"
+            ]
+        }
+    }
+]
