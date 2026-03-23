@@ -56,6 +56,61 @@ async function removeCartItem(cartItemId) {
   }
 }
 
+
+async function createOrder() {
+  const checkoutBtn = document.getElementById("checkout-btn");
+  if (!checkoutBtn) return;
+
+  checkoutBtn.addEventListener("click", async function (e) {
+    e.preventDefault();
+
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    if (!user) {
+      alert("Önce giriş yapmalısınız");
+      return;
+    }
+
+    try {
+      const cartResponse = await fetch(`${BASE_URL}/api/cart/${user._id}`);
+      const cartItems = await cartResponse.json();
+
+      if (!cartItems || cartItems.length === 0) {
+        alert("Sepetiniz boş");
+        return;
+      }
+
+      const lastCartItem = cartItems[cartItems.length - 1];
+
+      const response = await fetch(`${BASE_URL}/api/orders`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          userId: user._id,
+          cartId: lastCartItem._id,
+          paymentMethod: "Kredi Kartı"
+        })
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        alert("Sipariş başarıyla oluşturuldu");
+      } else {
+        alert(data.message || "Sipariş oluşturulamadı");
+      }
+    } catch (error) {
+      console.error("Sipariş hatası:", error);
+      alert("Sunucu hatası");
+    }
+  });
+}
+
+
+
+
 async function displayCartProduct() {
   const cartWrapper = document.querySelector(".cart-wrapper");
   if (!cartWrapper) return;
@@ -142,3 +197,4 @@ function saveCartValues(cart, products) {
 }
 
 displayCartProduct();
+createOrder();

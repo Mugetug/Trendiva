@@ -4,12 +4,22 @@ import {
 console.log("products.js yüklendi");
 
 function productRoute() {
-  const productLinks = document.getElementsByClassName("product-link");
+  const productLinks = document.querySelectorAll(".product-link");
 
-  Array.from(productLinks).forEach((link) => {
+  productLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
       e.preventDefault();
-      const id = link.dataset.id;
+
+      const clickedLink = e.currentTarget;
+      const id = clickedLink.dataset.id;
+
+      console.log("Detaya giden ürün id:", id);
+
+      if (!id) {
+        alert("Ürün id bulunamadı");
+        return;
+      }
+
       localStorage.setItem("productId", JSON.stringify(id));
       window.location.href = "single-product.html";
     });

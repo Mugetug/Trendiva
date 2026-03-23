@@ -35,5 +35,6 @@
    - **Açıklama:** Kullanıcı, sepetinde bulunan tüm ürünleri ve toplam tutarı görüntüler. Sepet bilgileri veritabanından alınır.
 
 10. **Sipariş Oluşturma**
-   - **API Metodu:** `POST /orders`
-   - **Açıklama:** Kullanıcı, sepetindeki ürünleri satın alarak sipariş oluşturur. Sipariş bilgileri veritabanına kaydedilir ve ürün stok miktarı güncellenir.
+
+- **API Metodu:** `POST /orders`
+- **Açıklama:** Kullanıcı, sepetindeki ürünleri satın alarak sipariş oluşturur. Sipariş bilgileri veritabanına kaydedilir ve ürün stok miktarı güncellenir.
