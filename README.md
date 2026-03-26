@@ -23,7 +23,7 @@ TRENDIVA projesi, temel e-ticaret işlevlerini içeren, kullanıcı dostu ve gü
 ## Proje Linkleri
 
 - **REST API Adresi:** [https://trendiva-api.onrender.com](https://trendiva-api.onrender.com)
-- **Web Frontend Adresi:** Henüz yayınlanmadı.
+- **Web Frontend Adresi:** https://trendiva-gamma.vercel.app
 
 ---
 
