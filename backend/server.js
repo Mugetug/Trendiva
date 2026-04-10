@@ -3,17 +3,14 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const connectDB = require("./config/db");
 
-
-
 dotenv.config();
-// MongoDB bağlantısı
-connectDB();
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
+// Routes
 const userRoutes = require("./routes/userRoutes");
 const productRoutes = require("./routes/productRoutes");
 const cartRoutes = require("./routes/cartRoutes");
@@ -24,12 +21,26 @@ app.use("/api/products", productRoutes);
 app.use("/api/cart", cartRoutes);
 app.use("/api/orders", orderRoutes);
 
+// Test route
 app.get("/", (req, res) => {
-    res.send("Trendiva API çalışıyor");
+  res.send("Trendiva API çalışıyor");
 });
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
-    console.log(`Server ${PORT} portunda çalışıyor`);
-});
+// 🔥 ÖNEMLİ: önce DB, sonra server
+const startServer = async () => {
+  try {
+    await connectDB();
+
+    app.listen(PORT, () => {
+      console.log(`Server ${PORT} portunda çalışıyor`);
+      console.log("MongoDB bağlantısı başarılı ve server aktif 🚀");
+    });
+
+  } catch (err) {
+    console.error("Server başlatılamadı ❌", err);
+  }
+};
+
+startServer();
