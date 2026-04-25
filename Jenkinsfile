@@ -2,18 +2,9 @@ pipeline {
     agent any
 
     stages {
-
         stage('Project Ready') {
             steps {
                 echo 'Trendiva project hazır'
-            }
-        }
-
-        stage('Backend Install') {
-            steps {
-                dir('backend') {
-                    sh 'npm install'
-                }
             }
         }
 
