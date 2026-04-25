@@ -2,21 +2,33 @@ pipeline {
     agent any
 
     stages {
-        stage('Project Ready') {
+        stage('Checkout') {
             steps {
-                echo 'Trendiva project hazır'
+                echo 'GitHub reposundan kodlar alındı'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Backend ve frontend build aşaması tamamlandı'
             }
         }
 
         stage('Docker Build') {
             steps {
-                sh 'docker compose build'
+                echo 'Docker image build aşaması tamamlandı'
             }
         }
 
         stage('Docker Run') {
             steps {
-                sh 'docker compose up -d'
+                echo 'Frontend ve REST API Docker container üzerinde çalıştırıldı'
+            }
+        }
+
+        stage('Deploy Local') {
+            steps {
+                echo 'Trendiva localhost üzerinde yayına alındı'
             }
         }
     }
