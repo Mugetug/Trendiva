@@ -8,7 +8,7 @@ Bu dokümanda, Trendiva mobil uygulamasının REST API ile iletişimini sağlaya
 
 ## Mobil Backend Görevleri
 
-1. [Müge Tuğ'un Mobil Backend Görevleri](Muge-Tug-Mobil-Backend-Gorevleri.md)
+1. [Müge Tuğ'un Mobil Backend Görevleri](Muge-Tug/Muge-Tug-Mobil-Backend-Gorevleri.md)
 
 ---
 
