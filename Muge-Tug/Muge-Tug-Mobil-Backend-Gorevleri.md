@@ -1,6 +1,6 @@
 # Müge Tuğ'un Mobil Backend Görevleri
 
-Mobil Front-end ile Back-end Bağlantı Videosu:
+**Mobil Front-end ile Back-end Bağlantı Videosu:**
 Link buraya eklenecek
 
 ---
