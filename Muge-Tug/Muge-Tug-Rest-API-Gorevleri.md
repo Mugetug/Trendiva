@@ -1,6 +1,6 @@
 # Müge Tuğ'un REST API Metotları
 
-**API Test Videosu:** Link buraya eklenecek
+**API Test Videosu:** (https://youtu.be/6jwKeIsXgYI)
 
 ---
 

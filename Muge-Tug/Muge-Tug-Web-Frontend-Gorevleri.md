@@ -2,7 +2,7 @@
 
 **Front-end Domain Adresi:** https://trendiva-gamma.vercel.app
 
-**Front-end Test Videosu:** BURAYA-YOUTUBE-LINKI-GELECEK
+**Front-end Test Videosu:** https://youtu.be/mVfntTIL5s4
 
 Bu projede toplam 10 gereksinimin frontend tarafında 8 tanesi gerçekleştirilmiştir.  
 Frontend üzerinden gösterilen gereksinimler aşağıdadır.
