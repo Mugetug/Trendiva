@@ -88,15 +88,4 @@ Projede aşağıdaki teknolojiler kullanılmıştır:
 6. Docker container gösterimi
 7. Jenkins CI/CD gösterimi
 
----
 
-# Kontrol Listesi
-
-- [ ] Mobil uygulama çalışıyor
-- [ ] Backend çalışıyor
-- [ ] MongoDB bağlantısı aktif
-- [ ] Redis çalışıyor
-- [ ] RabbitMQ çalışıyor
-- [ ] Docker containerları çalışıyor
-- [ ] Jenkins pipeline çalışıyor
-- [ ] Video linkleri eklendi
