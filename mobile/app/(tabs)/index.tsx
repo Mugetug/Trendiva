@@ -27,16 +27,19 @@ export default function HomeScreen() {
   }, []);
 
   const getProducts = async () => {
-    try {
-      const response = await fetch(API_URL);
-      const data = await response.json();
-      setProducts(data);
-    } catch (error) {
-      console.log("API Hatası:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
+  try {
+
+    const response = await fetch(API_URL);
+
+    const data = await response.json();
+
+    setProducts(data);
+  } catch (error) {
+    console.log("API Hatası:", error);
+  } finally {
+    setLoading(false);
+  }
+};
 
   const handleDetail = (product: any) => {
     router.push({
