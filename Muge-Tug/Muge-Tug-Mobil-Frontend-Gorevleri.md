@@ -1,6 +1,6 @@
 # Müge Tuğ'un Mobil Frontend Görevleri
 
-**Mobile Front-end Demo Videosu:** [Link buraya eklenecek](https://example.com)
+**Mobile Front-end Demo Videosu:** (https://youtu.be/rZ_6hMpgegU)
 
 ## 1. Üye Olma (Kayıt) Ekranı
 
