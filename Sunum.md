@@ -10,7 +10,7 @@
 
 ## Redis Cache Kanıt Videosu
 
-> **Video Linki:** Redis videosu linki buraya eklenecek
+> **Video Linki:** https://youtu.be/k5NxRaEUeeo
 
 ## Mobil Frontend + Backend Demo Videosu
 
