@@ -6,7 +6,7 @@
 
 ## RabbitMQ Kanıt Videosu
 
-> **Video Linki:** RabbitMQ videosu linki buraya eklenecek
+> **Video Linki:** https://youtu.be/ifbOPC9LleE
 
 ## Redis Cache Kanıt Videosu
 
