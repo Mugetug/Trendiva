@@ -14,7 +14,7 @@
 
 ## Mobil Frontend + Backend Demo Videosu
 
-> **Video Linki:** Mobil uygulama demo videosu linki buraya eklenecek
+> **Video Linki:** https://youtu.be/rZ_6hMpgegU
 
 ---
 
