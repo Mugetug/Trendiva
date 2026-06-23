@@ -97,9 +97,10 @@ Bu dokümanda, Trendiva mobil uygulamasının REST API ile iletişimini sağlaya
 
 ---
 
-## Video Kanıtı
+## Video Kanıtları
 
-**Mobil Frontend ile Backend Bağlantı Videosu:** Link buraya eklenecek  
-**Redis Cache Videosu:** Link buraya eklenecek  
-**RabbitMQ Mesaj Kuyruğu Videosu:** Link buraya eklenecek  
-**Docker + CI/CD Videosu:** Link buraya eklenecek
+**Mobil Frontend Demo Videosu:** (https://youtu.be/rZ_6hMpgegU)
+**Mobil Backend Bağlantı Videosu:** https://youtu.be/rZ_6hMpgegU 
+**Redis Cache Videosu:** https://youtu.be/k5NxRaEUeeo
+**RabbitMQ Videosu:** https://youtu.be/ifbOPC9LleE
+**Docker + CI/CD Videosu:** https://youtu.be/I8XRa2icFyo
