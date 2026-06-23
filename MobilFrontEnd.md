@@ -99,7 +99,7 @@ Bu dokümanda, Trendiva mobil uygulamasının kullanıcı arayüzü (UI) ve kull
 
 ## Video Kanıtları
 
-**Mobil Frontend Demo Videosu:** (https://youtu.be/rZ_6hMpgegU)
+**Mobil Frontend Demo Videosu:** https://youtu.be/rZ_6hMpgegU
 **Mobil Backend Bağlantı Videosu:** https://youtu.be/rZ_6hMpgegU 
 **Redis Cache Videosu:** https://youtu.be/k5NxRaEUeeo
 **RabbitMQ Videosu:** https://youtu.be/ifbOPC9LleE
